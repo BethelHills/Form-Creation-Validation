@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Registration</h1>
+            <p>Create your account with validation</p>
+        </header>
+
+        <main>
+            <section class="registration-form">
+                <h2>Registration Form</h2>
+                <form id="registration-form" class="form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Register</button>
+                        <button type="button" class="reset-btn">Reset</button>
+                    </div>
+                </form>
+                
+                <div id="form-feedback" class="feedback" style="display: none;"></div>
+            </section>
+
+            <section class="user-data">
+                <h2>User Data from API</h2>
+                <div id="user-data-display" class="user-data-display">
+                    <p>User data will be loaded here...</p>
+                </div>
+                <button id="load-user-data" class="load-btn">Load User Data</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 User Registration. Built with modern web technologies.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
